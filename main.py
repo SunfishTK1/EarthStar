@@ -15,8 +15,8 @@ with st.sidebar:
         submit_button = st.form_submit_button(label='Submit')
 
 if query and submit_button:
-    db = lch.get_vector_loaded_db()
-    response = lch.get_response_from_query(db, query)
+    #db = lch.get_vector_loaded_db()
+    response = lch.get_response_from_query(query)
     #docs = response = lch.get_response_from_query(db, query)
     st.subheader("Answer: ")
     #st.text(textwrap.fill(response, width = 80))
