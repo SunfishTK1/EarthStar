@@ -47,11 +47,11 @@ def create_vector_db_from_pdf() -> FAISS:
 def get_vector_loaded_db():
     return FAISS.load_local("./", OpenAIEmbeddings(), "undergraduate_catalog")
 
-def get_response_from_query(db, query, k=2):# Changed k to 2 from 4 while using ugrad catalog as datasource.
+def get_response_from_query(query, k=2):# Changed k to 2 from 4 while using ugrad catalog as datasource.
     # text-davinci can hand 4097 tokens
     # What courses do you recommend?
-    docs = db.similarity_search(query, k=k) # narrows down the course data to specifically search to the ones similar to the query based on embeddings
-    docs_page_content = " ".join([d.page_content for d in docs])
+    #docs = db.similarity_search(query, k=k) # narrows down the course data to specifically search to the ones similar to the query based on embeddings
+    #docs_page_content = " ".join([d.page_content for d in docs])
 
     llm = OpenAI(model="gpt-3.5-turbo-instruct") # Use gpt-3.5-turbo-instruct for great responses at preferable prices
     prompt = PromptTemplate(
@@ -71,6 +71,6 @@ def get_response_from_query(db, query, k=2):# Changed k to 2 from 4 while using 
         """,
     )
     chain = LLMChain(llm=llm, prompt=prompt)
-    response = chain.run(question=query, docs=docs_page_content)
+    response = chain.run(question=query) # docs=docs_page_content
     response = response.replace("\n", "")
     return response
