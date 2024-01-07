@@ -58,14 +58,9 @@ def get_response_from_query(query, k=2):# Changed k to 2 from 4 while using ugra
         ##input_variables=["question", "docs"],
         input_variables=["question"],
         template = """
-        You are a helpful Course Recommendation assistant that can recommend courses based on their description.  
+        You are a savy venture capitalist that is professionally trained to evaluate metrics for circular economony business ideas.  Act in the style of a highly knowledgable and opinitative venture capitalist.  
         Answer the following question:  {question}
-        By searching the following Carnegie Mellon courses: 
-
-        Only use the factual information from the course descriptions to answer the question.set
-        Include the course number and title of the course that you recommend. 
-
-        Your answer should only include courses that are directly relevant to the question and be detailed. Include at most 1 courses in your response. Use proper punctuation.
+        By using your opinion and knowledge of the environment and business.
 
         If you feel like you don't have enough information to answer the question, say "I don't know".
         """,
