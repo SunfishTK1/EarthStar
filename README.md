@@ -1,6 +1,6 @@
 # EarthStar
 The langauge of EarthStar is in Python. 
-This program is currently running in Python 3.11, LangChain version 0.1.0, and Streamlit 1.27.2.
+This program is currently running in Python 3.11, LangChain version 0.1.0, OpenAI 0.28.1 and Streamlit 1.27.2.
 Download the required dependecies, which include but are not limited to those above.
 
 HOW TO RUN:
