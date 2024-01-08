@@ -3,6 +3,10 @@ The langauge of EarthStar is in Python.
 This program is currently running in Python 3.11, LangChain version 0.1.0, OpenAI 0.28.1 and Streamlit 1.27.2.
 Download the required dependecies, which include but are not limited to those above.
 
+API KEYS Required:
+Open AI Key Required
+Add a .env file with OPENAI_API_KEY =[Add Your OPEN AI Key Here]
+
 HOW TO RUN:
 Before you run, you need to cd into competition_filters. Use the command "cd competition_filters" in the terminal. The command to run the file is "streamlit run test_filter.py". This should open a new window in a browser. Here, you can interact with EarthStar.
 
