@@ -58,13 +58,13 @@ def finalJustification(problem, solution, finalValue):
         Coherence is defined as using data to support the given solution, being gramatically correct, and sounding feasible and realistic.
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {finalValue} out of 100 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {finalValue} out of 100 points. The idea is a circular economy business idea and the
+        talking to a venture capital firm that an idea deserves a evaluation of "{finalValue}" at a meeting.  You a professional and
+        clearly explain why the idea deserves a evaluation of "{finalValue}". The idea is a circular economy business idea and the
         following metrics of social reach and good, sustainability, business viability, noveltly, and coherence of business plan were used.
         
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {finalValue} out of 100 points.
-        Mention the {finalValue} out of 100 points, and imply that anything above 80 points is a good solution.
-        Be concise with your answer, please round the {finalValue} to the nearest tenth.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {finalValue}.
+        Mention the "{finalValue}" score in the overall metric.  
+        Be concise with your answer, and make sure the output is LESS than 1300 characters.
         The following problem: {problem}
         The following solution: {solution}
         """
@@ -88,14 +88,13 @@ def businessJustification(problem, solution, businessValue):
         template = """
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {businessValue} out of 10 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {businessValue} out of 10 points. The {businessValue} should be supported using the aspects of marketsize, profitabilility, and its ability to compete
+        convincing a venture capital firm that an idea deserves a rating of {businessValue} at a meeting.  You a fierce salesman and argue 
+        clearly and without doubt that the idea deserves a rating of {businessValue}. The {businessValue} should be supported using the aspects of marketsize, profitabilility, and its ability to compete
         with other competitors in the market.
         
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {businessValue} out of 10 points.
-        Mention the {businessValue} out of 10 points, and imply that anything above 8 points is a good solution in the business metric.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a business rating of {businessValue}.
+        Mention the {businessValue} score metric. 
         Be concise with your answer, and make sure the output is LESS than 1300 characters.
-        Please round the {businessValue} to the nearest tenth.
         The following problem: {problem}
         The following solution: {solution}
         """
@@ -119,14 +118,13 @@ def socialJustification(problem, solution, socialValue):
         template = """
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {socialValue} out of 10 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {socialValue} out of 10 points. The {socialValue} should be supported using the aspects of 
-        social impact, social justice, social learning, and how likely diverse people are to adopt the idea.
+        convincing a venture capital firm that an idea deserves a social rating of {socialValue} at a meeting.  You a fierce salesman and argue 
+        clearly and without doubt that the idea deserves a rating of {socialValue}. The {socialValue} should be supported using the aspects of 
+        social impact, social justice, social learning, and the global influence of the idea, even when diverse people use it.
         
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {socialValue} out of 10 points.
-        Mention the {socialValue} out of 10 points, and imply that anything above 8 points is a good solution in the social metric.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {socialValue}.
+        Mention the {socialValue} score metric.
         Be concise with your answer, and make sure the output is LESS than 1300 characters.
-        Please round the {socialValue} to the nearest tenth.
         The following problem: {problem}
         The following solution: {solution}
         """
@@ -150,14 +148,13 @@ def coherentJustification(problem, solution, coherentValue):
         template = """
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {coherentValue} out of 10 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {coherentValue} out of 10 points. The {coherentValue} should be supported using the aspects of
+        convincing a venture capital firm that an idea deserves a coherency rating of {coherentValue} at a meeting.  You a fierce salesman and argue 
+        clearly and without doubt that the idea deserves a rating of {coherentValue}. The {coherentValue} should be supported using the aspects of
         the punctutation, grammar and vocabulary of the problem and solution.
         
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {coherentValue} out of 10 points.
-        Mention the {coherentValue} out of 10 points, and imply that anything above 8 points is a good solution in the coherence metric.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {coherentValue}.
+        Mention the {coherentValue} score.
         Be concise with your answer, and make sure the output is LESS than 1300 characters.
-        Please round the {coherentValue} to the nearest tenth.
         The following problem: {problem}
         The following solution: {solution}
         """
@@ -181,15 +178,14 @@ def novelJustification(problem, solution, novelValue):
         template = """
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {novelValue} out of 10 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {novelValue} out of 10 points. The {novelValue} should be supported using the aspects of 
+        convincing a venture capital firm that an idea deserves a novel rating of {novelValue} at a meeting.  You a fierce salesman and argue 
+        clearly and without doubt that the idea deserves a rating of {novelValue}. The {novelValue} should be supported using the aspects of 
         the opportunity for the product to capitalize in the market and the innovative impact of the idea.
 
 
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {novelValue} out of 10 points.
-        Mention the {novelValue} out of 10 points, and imply that anything above 8 points is a good solution.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {novelValue}.
+        Mention the {novelValue} score.
         Be concise with your answer, and make sure the output is LESS than 1300 characters.
-        Please round the {novelValue} to the nearest tenth.
         The following problem: {problem}
         The following solution: {solution}
         """
@@ -213,21 +209,20 @@ def sustainabilityJustification(problem, solution, sustainabilityValue):
         template = """
         
         Imagine you are a team of consultants
-        convincing a venture capital firm that an idea deserves a rating of {sustainabilityValue} out of 10 points at a meeting.  You a fierce salesman and argue 
-        clearly and without doubt that the idea deserves a rating of {sustainabilityValue} out of 10 points. The {sustainabilityValue} should be supported using the aspects of 
-        the opportunity for the product to capitalize in the market and the innovative impact of the idea.
+        convincing a venture capital firm that an idea deserves a sustainability rating of {sustainabilityValue} at a meeting.  You a fierce salesman and argue 
+        clearly and without doubt that the idea deserves a rating of {sustainabilityValue}. The {sustainabilityValue} should be supported using the aspects of 
+        sustainability aspects of the use of a circular economy and resource efficiency.
 
 
-        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {sustainabilityValue} out of 10 points.
-        Mention the {sustainabilityValue} out of 10 points, and imply that anything above 8 points is a good solution.
+        Use the following problem and solution pair to create your argument why the following business idea strongly deserves a rating of {sustainabilityValue}.
+        Mention the {sustainabilityValue} score.
         Be concise with your answer, and make sure the output is LESS than 1300 characters.
-        Please round the {novelValue} to the nearest tenth.
         The following problem: {problem}
         The following solution: {solution}
         """
         )
     chain = LLMChain(llm=llm, prompt=prompt)
-    response = chain.run(problem=problem, solution=solution, novelValue = novelValue) # docs=docs_page_content
+    response = chain.run(problem=problem, solution=solution, sustainabilityValue = sustainabilityValue) # docs=docs_page_content
     response = response.replace("\n", "")
     #print(response)
     #print("\n")
